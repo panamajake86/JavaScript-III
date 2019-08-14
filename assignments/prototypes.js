@@ -141,5 +141,38 @@ Humanoid.prototype.greet = function(){
 
   // Stretch task: 
   // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.  
+  const heroicHero = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+      length: 1,
+      width: 3,
+      height: 6,
+    },
+    healthPoints: 32,
+    name: 'Eamon',
+    team: 'Holy Warriors',
+    weapons: [
+      'Greataxe',
+      'Javelin',
+    ],
+    language: 'Celestial',
+  });
+
+  const villainousVillain = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+      length: 1,
+      width: 3,
+      height: 3,
+    },
+    healthPoints: 40,
+    name: 'Walter',
+    team: 'Eldritch Castle',
+    weapons: [
+      'Staff of Evil-Doing',
+      'Sneaks Dagger',
+    ],
+    language: 'Abyssal',
+  });
   // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
   // * Create two new objects, one a villain and one a hero and fight it out with methods!
